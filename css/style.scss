@@ -13,7 +13,7 @@ code {
 }
 
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 label {
   cursor: pointer;
@@ -239,7 +239,7 @@ html {
   }
   &__content {
     display: grid;
-    grid-template-columns: 50.1% 23.9% 26%;
+    grid-template-columns: 1fr 350px 400px;
 
     height: calc(100vh - 40px);
     background: #2f3240;
