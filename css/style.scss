@@ -75,7 +75,7 @@ html {
 .App {
   &__menu {
     display: grid;
-    grid-template-columns: minmax(800px, 1fr) 47.3%;
+    grid-template-columns: minmax(800px, 1fr) 1fr;
 
     height: 40px;
     background-color: #131722;
