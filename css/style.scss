@@ -75,7 +75,7 @@ html {
 .App {
   &__menu {
     display: grid;
-    grid-template-columns: minmax(800px, 1fr) 47.3%;
+    grid-template-columns: minmax(800px, 1fr) 46.3%;
 
     height: 40px;
     background-color: #131722;
@@ -582,7 +582,7 @@ html {
     }
     &-box3 {
       display: grid;
-      grid-template-rows: minmax(0, 63%) minmax(260px, 1fr);
+      grid-template-rows: minmax(0, 63%) minmax(280px, 1fr);
 
       .box3_top {
         border-bottom: 1px solid #131722;

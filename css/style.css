@@ -23,7 +23,7 @@ html {
 
 .App__menu {
   display: grid;
-  grid-template-columns: minmax(800px, 1fr) 47.3%;
+  grid-template-columns: minmax(800px, 1fr) 46.3%;
   height: 40px;
   background-color: #131722;
   padding-left: 10px;
@@ -674,7 +674,7 @@ html {
         font-weight: 550; }
   .App__content-box3 {
     display: grid;
-    grid-template-rows: minmax(0, 63%) minmax(260px, 1fr); }
+    grid-template-rows: minmax(0, 63%) minmax(280px, 1fr); }
     .App__content-box3 .box3_top {
       border-bottom: 1px solid #131722; }
       .App__content-box3 .box3_top .comeinand1_title {
