@@ -6,6 +6,7 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
@@ -239,7 +240,7 @@ html {
   }
   &__content {
     display: grid;
-    grid-template-columns: 1fr 400px 430px;
+    grid-template-columns: 1fr 350px 400px;
 
     height: calc(100vh - 40px);
     background: #2f3240;
@@ -282,8 +283,10 @@ html {
           .bq {
             color: #436877;
             font-size: 1.2rem;
+            position: absolute;
           }
           .func_full {
+            margin-left: auto;
             .mg_sp {
               font-size: 1.5rem;
               color: #ddd;
@@ -657,11 +660,11 @@ html {
                   align-items: center;
                   justify-content: center;
                   height: 100%;
-                  flex: 1;
+                  flex: 1 1;
                   list-style: none;
                   color: #defff3;
 
-                  font-size: 1.4rem;
+                  font-size: 1.3rem;
                   font-weight: 600;
                   white-space: wrap;
                   text-align: center;
