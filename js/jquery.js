@@ -18,35 +18,42 @@ function remo() {
 
 
 $(document).ready(function () {
+
   // "grid-template-columns", "78,6% 21.3%"
   $('.fa-minus').click(() => {
+    $('.func').show();
     $('.App__content-box3').hide();
-    $('.App__content').css("grid-template-columns", "78.6% 21.3%");
+    $('.App__content').css("grid-template-columns", "1fr 370px");
     $('.panel_2').show();
+
+    $('.select').css('width', '370px');
+    $('.func_full').show();
   })
+
+
 
 
   // ------------click hide
 
-  $('.sp_show_1').click(() => {
-    $('.App__content').css("grid-template-columns", " 50.1% 23.9% 26%");
-    $('.panel_2').hide();
-    $('.App__content-box3').show();
-    $('.sp_1').trigger('click');
-  })
+  // $('.sp_show_1').click(() => {
+  //   $('.App__content').css("grid-template-columns", " 50.1% 23.9% 26%");
+  //   $('.panel_2').hide();
+  //   $('.App__content-box3').show();
+  //   $('.sp_1').trigger('click');
+  // })
 
-  $('.sp_show_2').click(() => {
-    $('.App__content').css("grid-template-columns", " 50.1% 23.9% 26%");
-    $('.panel_2').hide();
-    $('.App__content-box3').show();
-    $('.sp_2').trigger('click');
-  })
-  $('.sp_show_3').click(() => {
-    $('.App__content').css("grid-template-columns", " 50.1% 23.9% 26%");
-    $('.panel_2').hide();
-    $('.App__content-box3').show();
-    $('.sp_3').trigger('click');
-  })
+  // $('.sp_show_2').click(() => {
+  //   $('.App__content').css("grid-template-columns", " 50.1% 23.9% 26%");
+  //   $('.panel_2').hide();
+  //   $('.App__content-box3').show();
+  //   $('.sp_2').trigger('click');
+  // })
+  // $('.sp_show_3').click(() => {
+  //   $('.App__content').css("grid-template-columns", " 50.1% 23.9% 26%");
+  //   $('.panel_2').hide();
+  //   $('.App__content-box3').show();
+  //   $('.sp_3').trigger('click');
+  // })
 
 
   // --------------
@@ -107,29 +114,62 @@ $(document).ready(function () {
     $('.buocgia').css('color', '#D1F0E5')
   })
 
+
+  function shows() {
+
+    $('.App__content').css("grid-template-columns", "1fr 370px 400px");
+    $('.select').css('width', '400px');
+    $('.App__content-box3').show();
+    if ($(window).width() < 1024) {
+
+      $('.func_full').hide();
+    }
+    hide = false;
+  }
+
   $('.sp_1').click(function () {
+
     $(this).css('background-color', '#2F3240');
     $('.sp_2').css('background-color', '#1B1C21');
     $('.sp_3').css('background-color', '#1B1C21');
     $(this).css('color', '#F78834');
     $('.sp_2').css('color', '#f1ffff');
     $('.sp_3').css('color', '#f1ffff');
+    // -------------
+
+    shows()
+
+
   })
   $('.sp_2').click(function () {
+
     $(this).css('background-color', '#2F3240');
     $('.sp_1').css('background-color', '#1B1C21');
     $('.sp_3').css('background-color', '#1B1C21');
     $(this).css('color', '#F78834');
     $('.sp_1').css('color', '#f1ffff');
     $('.sp_3').css('color', '#f1ffff');
+
+    // -------------
+
+
+    shows()
+
+
   })
   $('.sp_3').click(function () {
+
     $(this).css('background-color', '#2F3240');
     $('.sp_2').css('background-color', '#1B1C21');
     $('.sp_1').css('background-color', '#1B1C21');
     $(this).css('color', '#F78834');
     $('.sp_2').css('color', '#f1ffff');
     $('.sp_1').css('color', '#f1ffff');
+    // -------------
+
+    shows()
+
+
   })
 
 

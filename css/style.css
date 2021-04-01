@@ -100,7 +100,12 @@ html {
   .App__menu-right {
     display: flex;
     align-items: center;
-    margin-left: auto; }
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #131722; }
     .App__menu-right .traial {
       color: #ffffff;
       font-weight: 700;
@@ -161,7 +166,8 @@ html {
       color: #bf7927; }
 .App__content {
   display: grid;
-  grid-template-columns: 1fr 350px 400px;
+  grid-template-columns: 1fr 370px 400px;
+  position: relative;
   height: calc(100vh - 40px);
   background: #2f3240; }
   .App__content-box1 {
@@ -687,6 +693,13 @@ html {
         justify-items: center;
         align-items: center;
         height: 40px; }
+        .App__content-box3 .box3_top .comeinand1_title .icon_cn {
+          height: 100%;
+          display: flex; }
+          .App__content-box3 .box3_top .comeinand1_title .icon_cn .icon-hide {
+            display: flex;
+            align-items: center;
+            height: 100%; }
         .App__content-box3 .box3_top .comeinand1_title span,
         .App__content-box3 .box3_top .comeinand1_title .icon_ld {
           font-size: 1.3rem;
@@ -819,28 +832,54 @@ html {
         .App__content-box3 .box3_bottom .box3_input .bt label {
           font-size: 1.3rem;
           color: #ffffff; }
-      .App__content-box3 .box3_bottom .select {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 18px;
-        bottom: 10px;
-        height: 40px;
-        background-color: #1b1c21;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0; }
-        .App__content-box3 .box3_bottom .select span {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #ffffff;
-          font-size: 1.3rem;
-          cursor: pointer; }
-        .App__content-box3 .box3_bottom .select .sp_1 {
-          background-color: #2f3240; }
+  .App__content .select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    bottom: 10px;
+    height: 36px;
+    background-color: #131722;
+    position: fixed;
+    width: 400px;
+    right: 0;
+    bottom: 0; }
+    .App__content .select span {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      font-size: 1.3rem;
+      cursor: pointer; }
+    .App__content .select .sp_1 {
+      background-color: #2f3240; }
+
+@media (max-width: 1024px) {
+  .App__content-box3 {
+    display: none; }
+
+  .App__content {
+    grid-template-columns: 1fr 370px; }
+
+  .App__content .select {
+    width: 370px; }
+
+  .App__menu-left .top_person {
+    margin-left: 10px;
+    padding: 5px 7px; }
+    .App__menu-left .top_person p {
+      display: none; }
+    .App__menu-left .top_person .fa-trophy {
+      margin: 0; }
+
+  .App__menu {
+    grid-template-columns: minmax(648px, 1fr) 1fr; } }
+.hd {
+  grid-template-columns: 1fr 370px 400px; }
+
+.hs {
+  grid-template-columns: 1fr 370px; }
 
 /*# sourceMappingURL=style.css.map */
