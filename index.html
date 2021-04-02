@@ -337,45 +337,132 @@
         <div class="box3_top">
           <div class="comeinand1">
             <div class="comeinand1_title">
-              <span class="day_lenh" style="cursor: pointer;">Lệnh trong ngày</span>
-              <span class="control_lenh" style="cursor: pointer;">Lệnh điều kiện</span>
+              <div class="title_table tt1">
+                <span class="day_lenh" style="cursor: pointer;">Lệnh trong ngày</span>
+                <span class="control_lenh" style="cursor: pointer;">Lệnh điều kiện</span>
+              </div>
+              <div class="title_table tt2" style="display: none;">
+                <span class="day_lenh open_tab" style="cursor: pointer;">Vị thế mở</span>
+                <span class="control_lenh close_tab" style="cursor: pointer;">Vị thế đóng</span>
+              </div>
+              <div class="tt3" style="width: 100%; padding-left: 10px; display: none;">
+                <span style="font-size: 1.4rem; color: #F78939;text-align: left;">Thông tin tài sản</span>
+              </div>
               <div class="icon_cn">
-                <i class="fas fa-sync-alt icon_ld icon-hide" style="cursor: pointer;"></i>
+                <i class="fas fa-sync-alt icon_ld icon-hide " style="cursor: pointer;"></i>
+                <i class="fas fa-external-link-alt  icon_ld icon-hide"
+                  style="cursor: pointer; margin-left: 10px;display: none;"></i>
                 <i class="fa fa-minus close icon_ld icon-hide" style="cursor: pointer;"></i>
               </div>
             </div>
-            <div class="box_book">
-              <div class="comeinand1_table">
-                <span>lệnh</span>
-                <span>Mã</span>
-                <span>KL Khớp</span>
-                <span>Giá</span>
-                <span>TT</span>
+            <div class="table_book1">
+              <div class="box_book">
+                <div class="comeinand1_table">
+                  <span>lệnh</span>
+                  <span>Mã</span>
+                  <span>KL Khớp</span>
+                  <span>Giá</span>
+                  <span>TT</span>
+                </div>
+                <div class="comeinand1_text">
+                  <span>Chưa có lệnh nào trong số lệnh</span>
+                </div>
               </div>
-              <div class="comeinand1_text">
-                <span>Chưa có lệnh nào trong số lệnh</span>
+              <div class="control" style="display: none;">
+                <div class="control_menu">
+                  <ul>
+                    <li>Lệnh</li>
+                    <li>Mã</li>
+                    <li>Giá kích hoạt</li>
+                    <li>KL</li>
+                    <li>Giá</li>
+                    <li>Ngày hết hạn</li>
+                    <li>TT</li>
+                  </ul>
+                </div>
+                <div class="control_list">
+                  Chưa có lệnh nào trong sổ lệnh
+                </div>
               </div>
             </div>
-            <div class="control">
-              <div class="control_menu">
-                <ul>
-                  <li>Lệnh</li>
-                  <li>Mã</li>
-                  <li>Giá kích hoạt</li>
-                  <li>KL</li>
-                  <li>Giá</li>
-                  <li>Ngày hết hạn</li>
-                  <li>TT</li>
-                </ul>
-              </div>
-              <div class="control_list">
-                Chưa có lệnh nào trong sổ lệnh
-              </div>
-            </div>
-          </div>
-          <div class="comeinand2">
+            <div class="table_book2" style="display: none;">
+              <table class="list_context1">
+                <tr>
+                  <th>Mã</th>
+                  <th>KL</th>
+                  <th>Giá vốn</th>
+                  <th>Giá hiện tại</th>
+                  <th>+/-</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>VN30F2104 (M)</td>
+                  <td>1</td>
+                  <td>1,234.5</td>
+                  <td>1,245.6</td>
+                  <td>
+                    <span>
+                      1,040,000
+                    </span>
+                  </td>
+                  <td>
+                    <button>Đảo</button>
+                    <button>Đóng</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><span>
+                      Tông
+                    </span></td>
+                  <td>
+                    <span>710,000</span>
+                  </td>
+                  <td>
 
+                  </td>
+                </tr>
+              </table>
+              <div class="list_context2" style="display: none;">
+                <div class="title_list">
+                  <span>Mã</span>
+                  <span>KL</span>
+                  <span>Giá mua</span>
+                  <span>Giá bán</span>
+                  <span>Lãi/lỗ đã thực hiện</span>
+                </div>
+              </div>
+            </div>
+            <div class="table_book3" style="display: none;">
+              <div class="money">
+                <span>
+                  Tài sản ròng
+                </span>
+                <span>
+                  45,0000,333
+                </span>
+              </div>
+              <div class="money">
+                <span>
+                  Số dư ký quỹ
+                </span>
+                <span>
+                  45,0000
+                </span>
+              </div>
+              <div class="money">
+                <span>
+                  Thuế và phí
+                </span>
+                <span>
+                  0
+                </span>
+              </div>
+            </div>
           </div>
+
         </div>
         <div class="box3_bottom">
           <div class="box3_input">
@@ -388,8 +475,8 @@
                 <input id="lenhstop" type="radio" name="one">
                 Lệnh Stop
               </label>
-              <label for="lenhtrailing">
-                <input id="lenhtralling" type="radio" name="one">
+              <label for="lenhtrailling">
+                <input id="lenhtrailling" type="radio" name="one">
                 Lệnh tralling
               </label>
               <label for="lenhOSO">
@@ -429,10 +516,13 @@
         </div>
       </div>
       <div class="select">
-        <span class="sp_1">Sổ lệnh</span>
-        <span class="sp_2">Danh mục</span>
-        <span class="sp_3">Tài sản</span>
+        <span class="sp_1 dl">Sổ lệnh</span>
+        <span class="sp_2 dl">Danh mục</span>
+        <span class="sp_3 dl">Tài sản</span>
       </div>
+    </div>
+    <div>
+
     </div>
   </div>
 </body>
