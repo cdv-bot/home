@@ -229,6 +229,7 @@ $(document).ready(function () {
 
       $('.select').css('width', '400px');
     } else {
+      $('.func_full').show();
       $('.App__content-box3').show();
       $('.App__content').css("grid-template-columns", "1fr 370px 400px");
     }
